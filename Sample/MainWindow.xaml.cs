@@ -38,21 +38,21 @@ namespace Sample
             log.Log(level, tbLogText.Text);
         }
 
-       private void OnLogMessageItemAdded(object o, EventArgs Args )
-       {
-          // Do what you want :)
-          LogEventInfo logInfo = (NLogEvent)Args;
-          if( logInfo.Level >= NLog.LogLevel.Error)
-            SystemSounds.Beep.Play();
-       }
+        private void OnLogMessageItemAdded(object o, EventArgs Args)
+        {
+            // Do what you want :)
+            LogEventInfo logInfo = (NLogEvent)Args;
+            if (logInfo.Level >= NLog.LogLevel.Error)
+                SystemSounds.Beep.Play();
+        }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-           logCtrl.Clear();
+            logCtrl.Clear();
         }
         private void TopScroll_Click(object sender, RoutedEventArgs e)
         {
-           logCtrl.ScrollToFirst();
+            logCtrl.ScrollToFirst();
         }
         private void BottomScroll_Click(object sender, RoutedEventArgs e)
         {

@@ -7,10 +7,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>   
-         <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        
+
         <GroupBox Grid.Row="0" Header="Send">
             <StackPanel Orientation="Vertical">
                 <Label x:Name="lblLogText" Content="Text" />
@@ -21,20 +21,20 @@
                     <Button x:Name="btnWarning" Content="Warning" Click="Send_Click" />
                     <Button x:Name="btnError" Content="Error" Click="Send_Click" />
                 </StackPanel>
-            </StackPanel>            
-        </GroupBox>
-      <GroupBox Grid.Row="1" Header="Functions">
-         <StackPanel Orientation="Vertical">
-            <StackPanel Orientation="Horizontal">
-               <Button x:Name="btnClear" Content="Clear" Click="Clear_Click" />
-               <Button Content="Scroll Top" Click="TopScroll_Click" />
-                <Button Content="Scroll Bottom" Click="BottomScroll_Click" />
-                <CheckBox x:Name="cbAutoScroll" Content="Scroll To Last" HorizontalAlignment="Left" VerticalAlignment ="Center" Checked="AutoScroll_Checked" Unchecked="AutoScroll_Unchecked"/>
             </StackPanel>
-         </StackPanel>
-      </GroupBox>
+        </GroupBox>
+        <GroupBox Grid.Row="1" Header="Functions">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnClear" Content="Clear" Click="Clear_Click" />
+                    <Button Content="Scroll Top" Click="TopScroll_Click" />
+                    <Button Content="Scroll Bottom" Click="BottomScroll_Click" />
+                    <CheckBox x:Name="cbAutoScroll" Content="Scroll To Last" HorizontalAlignment="Left" VerticalAlignment ="Center" Checked="AutoScroll_Checked" Unchecked="AutoScroll_Unchecked"/>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
 
-      <GroupBox Grid.Row="2" Header="Autosending">
+        <GroupBox Grid.Row="2" Header="Autosending">
             <StackPanel Orientation="Vertical">
                 <CheckBox x:Name="chkBackgroundSending" Content="Send logs from background thread." Checked="BackgroundSending_Checked" IsChecked="False" Unchecked="BackgroundSending_Unchecked" />
             </StackPanel>
@@ -42,7 +42,7 @@
 
 
         <GroupBox Grid.Row="3" Header="NlogViewer">
-            <nlog:NlogViewer x:Name="logCtrl" TimeWidth="AUTO" LoggerNameWidth="0" LevelWidth="auto" ExceptionWidth="auto" MessageWidth="auto" /> 
+            <nlog:NlogViewer x:Name="logCtrl" TimeWidth="AUTO" LoggerNameWidth="0" LevelWidth="auto" ExceptionWidth="auto" MessageWidth="auto" />
         </GroupBox>
 
     </Grid>
