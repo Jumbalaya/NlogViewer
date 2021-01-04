@@ -1,7 +1,7 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Globalization;
 using System.Windows.Media;
-using NLog;
 
 namespace NlogViewer
 {

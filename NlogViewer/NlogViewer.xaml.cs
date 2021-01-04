@@ -1,11 +1,11 @@
-﻿using System;
+﻿using NLog;
+using NLog.Common;
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using NLog;
-using NLog.Common;
 
 namespace NlogViewer
 {
